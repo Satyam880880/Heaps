@@ -1,0 +1,21 @@
+package com.studyopedia;
+
+import java.util.Comparator;
+import java.util.PriorityQueue;
+//import java.util.*;
+public class Demo{
+	public static void main (String args[]) {
+		PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());
+		
+		pq.add(3);
+		pq.add(4);
+		pq.add(1);
+		pq.add(7);
+		
+		while(!pq.isEmpty()) {
+		//peek = top
+		System.out.println(pq.peek()); // 1,3,4,7
+		pq.remove();
+		}
+}
+}
